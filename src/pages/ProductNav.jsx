@@ -8,7 +8,6 @@ const ProductNav = () => {
             <Link to='/About'>About{"  "}</Link>
             <Link to='/Product'>Product{"  "}</Link>
             </NavLink>
-   
         </div>
     );
 
