@@ -3,14 +3,14 @@ import Home from "./Home";
 import Product from "./Product";
 import ProductDetail from "./ProductDetail";
 import {BrowserRouter, Route, Routes} from 'react-router-dom'
-import ProductNav from "./ProductNav";
+
 
 
 const TestIndex = () => {
     
     return ( 
         <div>
-            <BrowserRouter>
+            <BrowserRouter basename={process.env.PUBLIC_URL}>
             <Routes>
             <Route path='/' element={<Home/>}></Route>
             <Route path='/Home' element={<Home/>}></Route>
