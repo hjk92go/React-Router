@@ -1,0 +1,15 @@
+깃에서 react파일 배포(퍼블리싱)
+
+
+1. 레파지토리 생성
+2. git upload한다.
+3. npm i gh-pages
+4. package.json에서 만져줘야함
+	 4-1 : "scripts"에서 		"deploy" : "gh-pages -d build",
+   			"predeploy" : "npm run build"			추가해준다.
+	 4-2 : 제일마지막(혹은 제일위)에 "hompage" : "https://내깃아이디.github.io./레파지토리 이름"
+
+5. cf. 라우터 사용시 기본페이지를 설정해준다.
+	5-1 기본페이지 설정은 <BrowserRouter basename={process.env.PUBLIC_URL}>
+
+6. npm run deploy
